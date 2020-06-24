@@ -15,10 +15,10 @@ class Timer extends Thread{
 		while (var>=0){
 			try{
 
-				Thread.sleep(1000);
-			
-				System.out.println(var);
+				System.out.print(" \r " + var);
 
+				Thread.currentThread().sleep(1000);
+				
 				var++;
 			}
 			catch(InterruptedException ie){
